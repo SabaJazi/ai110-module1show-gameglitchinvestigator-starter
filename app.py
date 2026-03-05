@@ -104,6 +104,8 @@ if "status" not in st.session_state:
 if "history" not in st.session_state:
     st.session_state.history = []
 
+if "input_key" not in st.session_state:
+    st.session_state.input_key = 0
 st.subheader("Make a guess")
 
 st.info(
@@ -114,7 +116,7 @@ st.info(
 
 raw_guess = st.text_input(
     "Enter your guess:",
-    key=f"guess_input_{difficulty}"
+    key=f"guess_input_{difficulty}_{st.session_state.input_key}"
 )
 
 col1, col2, col3 = st.columns(3)
@@ -134,6 +136,9 @@ if show_hint:
 if new_game:
     st.session_state.attempts = 0
     st.session_state.secret = random.randint(1, 100)
+    st.session_state.input_key += 1 
+    st.session_state.status = "playing" 
+    st.session_state.history = []
     st.success("New game started.")
     st.rerun()
 
