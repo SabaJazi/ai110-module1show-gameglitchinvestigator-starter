@@ -39,6 +39,6 @@ When encountered with the issue of wrong hints of lower/ higher and Too Low/ Too
 ## 5. Looking ahead: your developer habits
 
 - What is one habit or strategy from this project that you want to reuse in future labs or projects?
-  - This could be a testing habit, a prompting strategy, or a way you used Git.
-- What is one thing you would do differently next time you work with AI on a coding task?
-- In one or two sentences, describe how this project changed the way you think about AI generated code.
+  - This could be a testing habit, a prompting strategy, or a way you used Git. I would use AI tools more when coding and debuging specially for brainstorming ideas.
+- What is one thing you would do differently next time you work with AI on a coding task? check the outputs more carefully.
+- In one or two sentences, describe how this project changed the way you think about AI generated code. The details that AI tools provide is helpful but need to be carefully checked, specially regarding the details and logic.

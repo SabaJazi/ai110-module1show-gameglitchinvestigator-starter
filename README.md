@@ -25,13 +25,13 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- [The game’s purpose is to have the player guess a randomly chosen secret number using Higher/Lower hints ] Describe the game's purpose.
+- [ I found three main bugs: (1) the secret number was being regenerated on each submit because of Streamlit reruns/state handling, so the target kept changing, (2) the hint logic was inverted, showing incorrect “Higher/Lower” feedback, and (3) the Enable/Disable control was not wired to game behavior, so toggling it did not actually change anything.] Detail which bugs you found.
+- [ I fixed the app by storing the secret number in persistent session state so it no longer resets on each submit, correcting the Higher/Lower comparison logic so hints match the guess, and wiring the Enable/Disable toggle to actually control whether gameplay actions are active.] Explain what fixes you applied.
 
 ## 📸 Demo
 
-- [ ] [Insert a screenshot of your fixed, winning game here]
+- [![Game glitch screenshot](images/temp_CodepathAI.jpg) ] 
 
 ## 🚀 Stretch Features
 
